@@ -42,19 +42,19 @@ body {font-family: "Lato", sans-serif}
   <div class="mySlides w3-display-container w3-center">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Maker</h3>
-      <p><b>Creator of new interactive musical devices through creative coding</b></p>   
+      <p><b>Creator of new interactive musical devices through creative coding</b></p>
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Producer</h3>
-      <p><b>Expanding my artistry through sound design and audio in three dimensional spaces</b></p>    
+      <p><b>Expanding my artistry through sound design and audio in three dimensional spaces</b></p>
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Musician</h3>
-      <p><b>A virtuosic multi instrumentalist, expanding the bounds of traditional ensembles</b></p>    
+      <p><b>A virtuosic multi instrumentalist, expanding the bounds of traditional ensembles</b></p>
     </div>
   </div>
 
@@ -65,13 +65,16 @@ body {font-family: "Lato", sans-serif}
     </div>
     <h2 class="w3-wide">ABOUT</h2>
     <p class="w3-opacity"><i>Noah Leong</i></p>
-    <p class="w3-justify w3-center">Noah hails from the Detroit metro area, and currently resides in Boston, MA. 
-      A professional and multi faceted musician, with a passionate interest in a wide range of styles including Jazz, Classical, Hip-Hop, RnB, and Pop. 
+    <p class="w3-justify w3-center">Noah hails from the Detroit metro area, and currently resides in Boston, MA.
+      A professional and multi faceted musician, with a passionate interest in a wide range of styles including Jazz, Classical, Hip-Hop, RnB, and Pop.
       Noah has extensive knowledge of sound design techniques and an interest in coding and computer music. Through these combined focuses, his more recent work
-      involves working with embedded devices such as the Arduino and Bela to create interactive touch interfaces. In addition Noah also has experience with circuit design 
-      for analog synthesizers and effects boxes. He also has spent a vast amount of time in the studio through recording sessions, both playing and behind the board. With a thorough understanding of music theory, 
-      and extensive performance experience, he has created and produced numerous original tracks, and arranged/recorded entire string ensemble parts for 
+      involves working with embedded devices such as the Arduino and Bela to create interactive touch interfaces. In addition Noah also has experience with circuit design
+      for analog synthesizers and effects boxes. He also has spent a vast amount of time in the studio through recording sessions, both playing and behind the board. With a thorough understanding of music theory,
+      and extensive performance experience, he has created and produced numerous original tracks, and arranged/recorded entire string ensemble parts for
       many projects. Additionally, Noah has taught private lessons and workshops for Jazz and Classical string playing.</p>
+
+      <a href = "Resources\Noah_Leong-resume(final)2.pdf" >ok</a>
+      <a href = "Resources\Cover_Letter.pdf" >ok</a>
   </div>
 
   <div class = "w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="portfolio">
@@ -144,7 +147,7 @@ body {font-family: "Lato", sans-serif}
       </div>
     </div>
   </div>
-  
+
 <!-- End Page Content -->
 </div>
 
@@ -165,12 +168,12 @@ function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
   myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
@@ -178,7 +181,7 @@ function myFunction() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-  } else { 
+  } else {
     x.className = x.className.replace(" w3-show", "");
   }
 }
