@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Industrious by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">NL</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="elements.html">Elements</a></li>
+					<li><a href="generic.html">Generic</a></li>
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Portfolio</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						<header>
+							<h2>Developer</h2>
+						</header>
+						<hr />
+						<h3>Bela Glove</h3>
+						<h4>Introduction</h4>
+						<p>Bela Glove is a MIDI glove controller using the Bela platform.</p>
+						
+						<h4>Sensor Design</h4>
+						<p>The glove has four flex sensors that act as variable resistors, going in to the analog input pins 0 through 3.
+							In addition, it also includes an accelerometer that measures the orientation of the glove. The accelerometer measures X, Y, and Z position and is also plugged in to the analog inputs 4 through 7.</p>
+						<h4>Performance Implementation</h4>
+						<p>The data gathered from the analog ins is mapped to MIDI ranges 0-127, and are sent as continuous controllers in to max and TouchDesigner. The max patch uses drunken randomness and a quantizer to play notes the first two flex sensors control rate.
+							The third and fourth flex sensors are used to control amplitude and filter cutoff, and the accelerometer adjusts the filter resonance. In addition, this data is also received by TouchDesigner which includes a rigged 3D model of a hand, an underwater environment, and particle effects for a more interesting performance.</p>
+						<p><a href="https://github.com/nleong0228/BelaGlove.git">GitHub Repository</a></p>
+							
+							<div class="video-wrap">
+								<div class="video-container">
+								  <iframe src="https://www.youtube.com/embed/videoseries?list=PL_Z9pQ_p41Sqv7RMb3ISnCM50YNNgAcyB"></iframe>
+								</div>
+							  </div>
+						<hr />
+						<h3>MIDI Painter</h3>
+						<h4>Introduction</h4>
+						<p>The idea behind this project largely came from Kentaro Suzuki's M4L device "LFO Sketch". Where drawn lines become an LFO of sorts. I wanted to expand on this idea of drawing for sonic control via touch devices like the iPhone and iPad.</p>
+						<h4>Design Process</h4>
+						<p>To create the app, I started by looking in to line drawing apps/games that used user drawn lines to designate a path for game objects to follow. In order to accomplish this, I found SpriteKit to be the most sensible option for developing my app.
+
+							For this app, I created a variety of functions for creating lines, circles, and actions. Lines are created by accessing the pathArray, an array of CGPoint's that are appended on every time the user moves their finger on the screen. Once the user lifts their finger, the line is created with a corresponding circle that follows the line's path via the AKAction, "Follow". On the user's touch down, the pathArray is cleared, and MIDI messages that follow the circle's position are sent.
+							
+							Within the touchUp function, also lies the operations for removing lines. To circumvent confusion between creating a line and removing a line, the program checks if the user is touching an existing line before creating a line. If the user is touching an existing line, the remove function is called. This function removes the line and circle from it's parent node, along with removing the circle from the circleArray to update the CC numbers.</p>
+						<p><a href = "https://github.com/nleong0228/MIDIPainter.git">GitHub Repository</a></p>
+						
+						<hr />
+						<h3>Augmented Viola</h3>
+						<h4>Description</h4>
+						<p>A midi controller imbedded in to a viola, using arduino on the Teensy 3.2 microc ontroller, and trill craft touch sensors.</p>
+						<h4>How It Works</h4>
+						<p>This controller sends continuous MIDI note values, utilizing an ultrasonic distance sensor, and Bela's trill craft sensor. The Trill craft is attatched to copper tape on the finger board of the viola to detect MIDI note values.</p>
+						<p><a href="https://github.com/nleong0228/BelaViola.git">Github Repository</a></p>
+						<div class="video-wrap">
+							<div class="video-container">
+							  <iframe src="https://www.youtube.com/embed/iZOxXZpOzT8"></iframe>
+							</div>
+						  </div>
+
+						<hr />
+						<h3>Procedural Pinball</h3>
+						<h4>Description</h4>
+						<p>A pinball game made in Unity3D, using procedurally generated sounds.</p>
+						<h4>How It Works</h4>
+						<p>A simple 3D pinball game, this project experiments with the use of procedurally generated sound in Unity. By using the OnAudioFilterRead, I was able to create an oscillator through C# code. When the ball interacts with colliders, it triggers randomized note values that are then quantized to a scale and sent to the oscillator script.</p>
+						<p><a href="https://github.com/nleong0228/MTEC-340_Midterm_Proj.git">Github Repository</a></p>
+						<div class="video-wrap">
+							<div class="video-container">
+							  <iframe src="https://www.youtube.com/embed/71JKdzbmjYg"></iframe>
+							</div>
+						  </div>
+						  <hr />
+						<h3>Musical Playground</h3>
+						<h4>Description</h4>
+						<p>An interactive, ambisonic composition created in Unity3D.</p>
+						<h4>How It Works</h4>
+						<p>This piece utilizes Unity's 3D audio features to create an immersive musical experience that includes ambisonic audio. The environment includes a ball that plays different ambient backgrounds based on the color floor its touching. In addition three instruments, a marimba, chimes, and drums are in the environment and all respond to the user's mouse cursor.  </p>
+						<p><a href="https://github.com/nleong0228/MTEC-340_Final_Proj.git">Github Repository</a></p>
+						<div class="video-wrap">
+							<div class="video-container">
+							  <iframe src="https://youtube.com/embed/sLitRTtpge0"></iframe>
+							</div>
+						  </div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+				
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
