@@ -144,7 +144,7 @@
       background-color: #b5b6ff;
    }
   </style>
-  <script src="./WebAudio Csound_files/CsoundObj.js"></script>
+  <script src="WebAudio Csound_files/CsoundObj.js"></script>
   <script>
     let count = 0;
     let csoundObj;
@@ -231,7 +231,7 @@
           document.getElementById('recButton').addEventListener('click',
             click_this);
           document.getElementById('recButton').disabled = false;
-          CSOUND_AUDIO_CONTEXT.suspend();
+          //CSOUND_AUDIO_CONTEXT.suspend();
           csoundObj.compileCSD(TEST_CSD);
           csoundObj.start();
         } else {
@@ -260,11 +260,11 @@
     }
 
     function SetAmp() {
-      SetParam('amp', '', 1., 0.0);
+      SetParam('granAmp', '', 1., 0.0);
     }
 
     function SetSeed() {
-      SetParam("seed", '', 1., 0.0);
+      SetParam("kstr", '', 1., 0.0);
     }
 
     function SetGrain() {
@@ -281,7 +281,7 @@
       console.log(name + ": " + val + " " + label);
     }
 
-  </script><script src="./WebAudio Csound_files/CsoundNode.js"></script>
+  </script><script src="WebAudio Csound_files/CsoundNode.js"></script>
 </head>
 
 <body>
