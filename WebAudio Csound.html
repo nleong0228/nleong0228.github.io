@@ -150,8 +150,16 @@
     let csoundObj;
     const TEST_CSD =
     `
-    0dbfs = 1
+    <CsoundSynthesizer>
+    <CsOptions>
+    </CsOptions>
+    <CsInstruments>
+
+    sr = 44100
+    ksmps = 32
     nchnls = 2
+    nchnls_i = 1
+    0dbfs = 1
 
     instr 103
     kf6 chnget "rec"
