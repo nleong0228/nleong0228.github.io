@@ -52,12 +52,13 @@
 						<p>Intelligent Accompanist is a performance system for generative accompaniment in real time.</p>
 						
 						<h4>Description</h4>
-						<p>This system was created in Unity 3D, and utilizes a PureData patch running on Bela for real time pitch detection. 
-							Through analyzing the user's notes, the system gets the negative harmony and note length to play back an accompanying melody.
-							These notes are visualized through cubes that change color and transform according to the MIDI note number that was triggered.
-							All instruments are created in Csound and integrated in to Unity using the Csound for Unity package. 
-						</p>
-							
+						<p>This system is created in Unity 3D, and utilizes a PureData patch for real time pitch detection. 
+							Through analaysis of the user's notes, the system gets the negative harmony and note length to play back an accompanying melody.
+							Visually the system consists of a sphere which acts as a first person character, and a cluster of cubes which represent the notes played
+							by the AI instruments, when a note is played, the sphere moves toward the respective cube. Furthermore, a granular synthesizer that allows 
+							for recording and granularizing samples during performance is implemented. The granular synthesizer is controlled by MiMu Gloves through
+							OSC messages received by Unity, and allow for control of effect parameters.
+						</p>							
 							<div class="video-wrap">
 								<div class="video-container">
 								  <iframe src="https://youtube.com/embed/D_5T1ebqmAE"></iframe>
