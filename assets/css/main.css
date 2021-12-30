@@ -821,7 +821,12 @@ table.alt tbody tr td {
 
 .highlights .content {
   background: #ffffff;
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025); }
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025); 
+}
+
+.highlights .content:hover {
+  background: #ffdcdc
+}
 
 /* Testimonials */
 .testimonials {
@@ -2541,9 +2546,9 @@ body {
   text-align: center;
   width: 100%; }
   #heading input, #heading select, #heading textarea {
-    color: #ffffff; }
+    color: #ffffff; } 
   #heading a {
-    color: #ce1b28; }
+    color: #160e0e; }
   #heading strong, #heading b {
     color: #ffffff; }
   #heading h1, #heading h2, #heading h3, #heading h4, #heading h5, #heading h6 {
@@ -2582,14 +2587,14 @@ body {
     #heading button.primary,
     #heading .button.primary {
       box-shadow: none;
-      background-color: #ce1b28;
+      background-color: #000000;
       color: #ffffff !important; }
       #heading input[type="submit"].primary:hover,
       #heading input[type="reset"].primary:hover,
       #heading input[type="button"].primary:hover,
       #heading button.primary:hover,
       #heading .button.primary:hover {
-        background-color: #db3543;
+        background-color: #000000;
         box-shadow: none; }
         #heading input[type="submit"].primary:hover:active,
         #heading input[type="reset"].primary:hover:active,
@@ -2730,7 +2735,7 @@ body {
   #menu input, #menu select, #menu textarea {
     color: #ffffff; }
   #menu a {
-    color: #ce1b28; }
+    color: #070404; }
   #menu strong, #menu b {
     color: #ffffff; }
   #menu h1, #menu h2, #menu h3, #menu h4, #menu h5, #menu h6 {
