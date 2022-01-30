@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic Page - Industrious by TEMPLATED</title>
+		<title>Developer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -27,8 +27,10 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="elements.html">Elements</a></li>
-					<li><a href="generic.html">Generic</a></li>
+					<li><a href="producer.html">Producer</a></li>
+					<li><a href="arranger.html">Arranger</a></li>
+					<li><a href="performance.html">Performance</a></li>
+					<li><a href="post.html">Post Production</a></li>
 				</ul>
 			</nav>
 
@@ -44,6 +46,24 @@
 						<header>
 							<h2>Developer</h2>
 						</header>
+						<hr />
+						<h3>Intelligent Accompanist</h3>
+						<h4>Introduction</h4>
+						<p>Intelligent Accompanist is a performance system for generative accompaniment in real time.</p>
+						
+						<h4>Description</h4>
+						<p>This system is created in Unity 3D, and utilizes a PureData patch for real time pitch detection. 
+							Through analaysis of the user's notes, the system gets the negative harmony and note length to play back an accompanying melody.
+							Visually the system consists of a sphere which acts as a first person character, and a cluster of cubes which represent the notes played
+							by the AI instruments, when a note is played, the sphere moves toward the respective cube. Furthermore, a granular synthesizer that allows 
+							for recording and granularizing samples during performance is implemented. The granular synthesizer is controlled by MiMu Gloves through
+							OSC messages received by Unity, and allow for control of effect parameters.
+						</p>							
+							<div class="video-wrap">
+								<div class="video-container">
+								  <iframe src="https://youtube.com/embed/D_5T1ebqmAE"></iframe>
+								</div>
+							  </div>
 						<hr />
 						<h3>Bela Glove</h3>
 						<h4>Introduction</h4>
@@ -83,7 +103,7 @@
 						<hr />
 						<h3>Augmented Viola</h3>
 						<h4>Description</h4>
-						<p>A midi controller imbedded in to a viola, using arduino on the Teensy 3.2 microc ontroller, and trill craft touch sensors.</p>
+						<p>A MIDI controller imbedded in to a viola, using arduino on the Teensy 3.2 microc ontroller, and trill craft touch sensors.</p>
 						<h4>How It Works</h4>
 						<p>This controller sends continuous MIDI note values, utilizing an ultrasonic distance sensor, and Bela's trill craft sensor. The Trill craft is attatched to copper tape on the finger board of the viola to detect MIDI note values.</p>
 						<p><a href="https://github.com/nleong0228/BelaViola.git">Github Repository</a></p>
